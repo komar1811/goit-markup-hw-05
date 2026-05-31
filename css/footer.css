@@ -19,7 +19,6 @@
 }
 
 .footer .container {
-  flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   margin-right: 120px;
@@ -117,6 +116,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms linear;
+  border: none;
 }
 
 .subscribe-form-submit:focus,
