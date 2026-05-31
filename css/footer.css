@@ -80,6 +80,7 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #fff;
+  transition: border-color 250ms linear;
 }
 
 .subscribe-form-input:focus {
@@ -94,7 +95,6 @@
   vertical-align: middle;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 1);
-  transition: border-color 250ms linear;
 }
 
 .subscribe-form-submit {

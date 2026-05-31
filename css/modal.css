@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  pointer-events: none;
+  opacity: 0;
 }
 
 .modal {
@@ -120,6 +123,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 4%;
+  color: #8e8f99;
 }
 
 .privacy-checkbox {
@@ -171,4 +175,29 @@
 .modal-form-input:focus-within {
   border: 1px solid rgba(77, 90, 229, 1);
   fill: rgba(77, 90, 229, 1);
+  transition:
+    fill 250ms linear,
+    border-color 250ms linear;
+}
+
+.field-input-container {
+  position: relative;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-btn-close {
+  background-color: #fff;
+  fill: #2e2f42;
+  transition:
+    fill 250ms linear,
+    background-color 250ms linear;
+}
+
+.modal-btn-close:focus,
+.modal-btn-close:hover {
+  fill: #fff;
 }
