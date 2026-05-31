@@ -53,6 +53,11 @@
   right: 24px;
 }
 
+.modal-btn-close-icon {
+  fill: #2e2f42; /* Изначальный цвет крестика */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-text {
   display: inline-block;
   width: 360px;
@@ -84,9 +89,7 @@
   padding-bottom: 8px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition:
-    border-color 250ms linear,
-    fill 250ms linear;
+  transition: border-color 250ms linear;
   outline: none;
 }
 
@@ -151,8 +154,8 @@
 
 .privacy-span {
   font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 4%;
+  line-height: 14px;
+  letter-spacing: 0.04em;
   text-decoration: underline;
   text-decoration-style: solid;
   color: rgba(77, 90, 229, 1);
@@ -202,7 +205,7 @@
 
 .form-icon {
   fill: #2e2f42;
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus .form-icon {
@@ -210,11 +213,11 @@
 }
 
 .modal-form-input:focus {
-  border: 1px solid rgba(77, 90, 229, 1);
-  fill: rgba(77, 90, 229, 1);
-  transition:
-    fill 250ms linear,
-    border-color 250ms linear;
+  border-color: #4d5ae5;
+}
+
+.modal-form-input:focus ~ .form-icon-container .form-icon {
+  fill: #4d5ae5;
 }
 
 .field-input-container {
@@ -229,16 +232,15 @@
 
 .modal-btn-close {
   background-color: #e7e9fc;
-  fill: #2e2f42;
   transition:
-    fill 250ms linear,
-    background-color 250ms linear;
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close:focus,
 .modal-btn-close:hover {
-  fill: #fff;
   background-color: #404bbf;
+  border-color: transparent;
 }
 
 .privacy-checkbox.visually-hidden {
@@ -283,4 +285,9 @@
   background-color: #404bbf;
   border-color: #404bbf;
   fill: #f4f4fd;
+}
+
+.modal-btn-close:hover .modal-btn-close-icon,
+.modal-btn-close:focus .modal-btn-close-icon {
+  fill: #ffffff;
 }
