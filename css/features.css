@@ -1,0 +1,38 @@
+.features-element-text {
+  letter-spacing: 0.02em;
+}
+
+.features .container {
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.features > .container {
+  flex-direction: column;
+}
+
+.features-element {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-element {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.icon-container {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: rgba(244, 244, 253, 1);
+  border: 1px solid rgba(142, 143, 153, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-element .icon {
+  width: 64px;
+  height: 64px;
+}
