@@ -111,6 +111,7 @@
   letter-spacing: 0.04em;
   transition: border-color 250ms linear;
   outline: none;
+  margin-bottom: 8px;
 }
 
 .comment-input::placeholder {
@@ -137,9 +138,11 @@
 
 .checkbox-form-label {
   flex-direction: row;
-  margin-top: 8px;
   align-items: center;
   height: 16px;
+
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .privacy-statement-text {
@@ -164,7 +167,7 @@
 
 .send-form-btn {
   width: 169px;
-  margin-top: 16px;
+  margin-top: 0;
   height: 56px;
   align-self: center;
 
